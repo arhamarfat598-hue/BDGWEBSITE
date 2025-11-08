@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BDG Games — Play & Download</title>
+  <meta name="description" content="BDG Games — indie & modded games. Download, play, and follow updates." />
+  <!-- Tailwind CDN for quick styling (remove for production and build properly) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Small extra tweaks */
+    .glass { background: rgba(255,255,255,0.06); backdrop-filter: blur(6px); }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-slate-900 via-purple-900 to-indigo-800 text-white antialiased">
+  <!-- Header -->
+  <header class="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between">
+    <a href="#" class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-2xl font-black">BDG</div>
+      <div class="hidden sm:block">
+        <h1 class="text-lg font-semibold">BDG Games</h1>
+        <p class="text-xs text-white/60">Indie games & mods</p>
+      </div>
+    </a>
+    <nav class="space-x-4 hidden md:block text-sm">
+      <a href="#games" class="px-3 py-2 hover:bg-white/5 rounded">Games</a>
+      <a href="#about" class="px-3 py-2 hover:bg-white/5 rounded">About</a>
+      <a href="#contact" class="px-3 py-2 hover:bg-white/5 rounded">Contact</a>
+      <a href="#download" class="px-3 py-2 bg-indigo-600/80 rounded hover:brightness-110">Download</a>
+    </nav>
+    <div class="md:hidden">
+      <button id="menuBtn" class="p-2 bg-white/6 rounded">Menu</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="max-w-6xl mx-auto px-6 py-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+    <div>
+      <h2 class="text-4xl md:text-5xl font-extrabold leading-tight">BDG — Games with personality</h2>
+      <p class="mt-4 text-white/75">Play indie hits, download modpacks, or follow development updates. Lightweight, mobile-friendly and ready to ship.</p>
+
+      <div class="mt-6 flex gap-3">
+        <a href="#games" class="px-5 py-3 rounded bg-indigo-600 font-semibold">Browse Games</a>
+        <a href="#download" class="px-5 py-3 rounded bg-white/6">Download APK</a>
+      </div>
+
+      <ul class="mt-6 text-sm text-white/70 space-y-2">
+        <li>• Regular updates & changelogs</li>
+        <li>• Lightweight installers (APKs / ZIPs)</li>
+        <li>• Community-driven feedback</li>
+      </ul>
+    </div>
+
+    <div class="glass p-6 rounded-2xl shadow-xl">
+      <h3 class="text-xl font-semibold">Featured Game</h3>
+      <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <img src="https://via.placeholder.com/400x220.png?text=Game+Screenshot" alt="featured" class="w-full rounded" />
+        <div>
+          <h4 class="font-semibold">BDG Battle: Alpha</h4>
+          <p class="text-sm text-white/70 mt-2">Fast-paced indie battler — small download, big fun. Supports offline play.</p>
+          <div class="mt-4 flex gap-2">
+            <a href="#" class="px-3 py-2 rounded bg-green-600 text-sm">Download APK</a>
+            <a href="#" class="px-3 py-2 rounded bg-white/6 text-sm">More info</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Games Grid -->
+  <section id="games" class="max-w-6xl mx-auto px-6 py-8">
+    <h3 class="text-2xl font-bold">All Games</h3>
+    <p class="text-white/70 mt-2">Click any item to view details and download links.</p>
+
+    <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Game card (replicate / generate server-side) -->
+      <article class="bg-white/3 p-4 rounded-xl">
+        <img src="https://via.placeholder.com/640x360.png?text=Game+1" class="w-full rounded-md" alt="Game 1" />
+        <h4 class="mt-3 font-semibold">BDG Truck Simulator</h4>
+        <p class="text-sm text-white/70 mt-1">Lightweight simulation with offline maps.</p>
+        <div class="mt-3 flex gap-2">
+          <a href="#" class="px-3 py-2 rounded bg-indigo-600 text-sm">Download</a>
+          <a href="#" class="px-3 py-2 rounded bg-white/6 text-sm">Details</a>
+        </div>
+      </article>
+
+      <article class="bg-white/3 p-4 rounded-xl">
+        <img src="https://via.placeholder.com/640x360.png?text=Game+2" class="w-full rounded-md" alt="Game 2" />
+        <h4 class="mt-3 font-semibold">BDG Battle Simulator</h4>
+        <p class="text-sm text-white/70 mt-1">PvE arena with mod support.</p>
+        <div class="mt-3 flex gap-2">
+          <a href="#" class="px-3 py-2 rounded bg-indigo-600 text-sm">Download</a>
+          <a href="#" class="px-3 py-2 rounded bg-white/6 text-sm">Details</a>
+        </div>
+      </article>
+
+      <article class="bg-white/3 p-4 rounded-xl">
+        <img src="https://via.placeholder.com/640x360.png?text=Game+3" class="w-full rounded-md" alt="Game 3" />
+        <h4 class="mt-3 font-semibold">BDG Puzzle</h4>
+        <p class="text-sm text-white/70 mt-1">Casual puzzle for short sessions.</p>
+        <div class="mt-3 flex gap-2">
+          <a href="#" class="px-3 py-2 rounded bg-indigo-600 text-sm">Download</a>
+          <a href="#" class="px-3 py-2 rounded bg-white/6 text-sm">Details</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="max-w-5xl mx-auto px-6 py-8">
+    <div class="bg-white/3 p-6 rounded-xl">
+      <h3 class="text-2xl font-bold">About BDG</h3>
+      <p class="mt-3 text-white/70">BDG started as a small indie team building lightweight games for mobile and desktop. This site is a placeholder template — replace screenshots, descriptions and downloads with your builds and metadata.</p>
+      <ul class="mt-4 text-sm text-white/70 space-y-1">
+        <li>• Use a proper backend (Firebase or your own) to serve APKs securely.</li>
+        <li>• Add checksums (SHA256) for downloads to ensure integrity.</li>
+        <li>• Keep changelogs and version numbers for each build.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact / Footer -->
+  <footer id="contact" class="max-w-6xl mx-auto px-6 py-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-white/3 p-6 rounded-xl">
+        <h4 class="font-bold">Contact</h4>
+        <p class="text-sm text-white/70 mt-2">Send feedback or report issues.</p>
+        <form onsubmit="event.preventDefault(); alert('Form submission simulated — integrate real backend');" class="mt-4 space-y-3">
+          <input class="w-full p-3 bg-white/5 rounded" placeholder="Your name" />
+          <input class="w-full p-3 bg-white/5 rounded" placeholder="Email" />
+          <textarea class="w-full p-3 bg-white/5 rounded" rows="4" placeholder="Message"></textarea>
+          <button class="px-4 py-2 bg-indigo-600 rounded">Send</button>
+        </form>
+      </div>
+
+      <div class="bg-white/3 p-6 rounded-xl">
+        <h4 class="font-bold">Quick Links</h4>
+        <ul class="mt-3 text-sm text-white/70 space-y-2">
+          <li>• Privacy & Terms</li>
+          <li>• Changelog</li>
+          <li>• Community Discord / Telegram</li>
+        </ul>
+        <div class="mt-6 text-xs text-white/60">© BDG Games — Template. Replace copy & assets before publishing.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Small script: mobile menu toggle
+    const menuBtn = document.getElementById('menuBtn');
+    if (menuBtn) menuBtn.addEventListener('click', ()=>{
+      alert('Mobile menu placeholder — hook up real mobile navigation');
+    });
+  </script>
+
+  <!-- Notes for developer:
+       - Replace placeholder images with real screenshots.
+       - Host APKs on a secure storage (S3, Firebase Storage). Always use HTTPS.
+       - Add analytics, crash reporting (optional) and signatures for downloads.
+       - For a dynamic site consider converting to React/Next.js or a CMS like WordPress.
+  -->
+</body>
+</html>
